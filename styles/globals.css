@@ -18,15 +18,14 @@ a {
 
 :root {
 	--black: #3B434E;
-	--back-ground-color: #f3f5f8;
+	--back-ground-color: #F3F5F8;
 	--white: white;
 	--primary: #7653FC;
-	--primary-hover: #5d36fc;
+	--primary-hover: #5D36FC;
 	--red: #FC836D;
 	--green: #1DC47E;
 	--green-light: #C8F8E4;
 	--grey-light: #EBEBEB;
-
 	--font-family: "Nato Sans", sans-serif;
 	--transition: all 0.3s ease-in-out;
 }

@@ -2,11 +2,13 @@ import React, { FC } from 'react';
 import cn from 'classnames';
 import styles from './Button.module.css';
 import { ButtonProps } from './Button.props';
-
+import ArrowIcon from './arrow.svg';
+import Image from 'next/image';
 const Button: FC<ButtonProps> = ({
     children,
     appearance = 'primary',
     className,
+    arrow = 'none',
     ...props
 }): JSX.Element => {
     return (
@@ -18,6 +20,21 @@ const Button: FC<ButtonProps> = ({
             {...props}
         >
             {children}
+            {arrow !== 'none' && (
+                <span
+                    className={cn(styles.arrow, {
+                        [styles.down]: arrow === 'down',
+                    })}
+                >
+                    <Image
+                        alt='arrow'
+                        src={ArrowIcon}
+                        width={10}
+                        height={10}
+                    />
+                    {/* <ArrowIcon/> */}
+                </span>
+            )}
         </button>
     );
 };

@@ -1,26 +1,20 @@
 .button {
     display: inline-block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-
     box-sizing: border-box;
     padding: 10px;
-
     cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
     border: none;
     border-radius: 5px;
-
-    transition: var(--transition);
-
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
 }
 
-
-
 .primary {
-    background: var(--primary);
     color: var(--white);
+    background: var(--primary);
 }
 
 .primary:hover {
@@ -28,13 +22,22 @@
 }
 
 .ghost {
-
-    background: var(--white);
-    border: 1px solid var(--grey-light);
     color: var(--black);
+    border: 1px solid var(--grey-light);
+    background: var(--white);
 }
 
 .ghost:hover {
-    background: var(--primary);
     color: var(--white);
+    background: var(--primary);
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.down {
+    transform: rotate(90deg);
+    transition: var(--transition);
 }
