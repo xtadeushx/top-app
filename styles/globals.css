@@ -21,8 +21,12 @@ a {
 	--back-ground-color: #f3f5f8;
 	--white: white;
 	--primary: #7653FC;
+	--primary-hover: #5d36fc;
 	--red: #FC836D;
 	--green: #1DC47E;
 	--green-light: #C8F8E4;
+	--grey-light: #EBEBEB;
+
 	--font-family: "Nato Sans", sans-serif;
+	--transition: all 0.3s ease-in-out;
 }
