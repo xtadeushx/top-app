@@ -41,3 +41,14 @@
     transform: rotate(90deg);
     transition: var(--transition);
 }
+
+.ghost:hover svg {
+    transform: rotate(90deg);
+    transition: var(--transition);
+    fill: var(--white);
+}
+
+.primary svg {
+    fill: var(--white);
+
+}

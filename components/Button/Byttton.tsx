@@ -3,6 +3,7 @@ import cn from 'classnames';
 import styles from './Button.module.css';
 import { ButtonProps } from './Button.props';
 import ArrowIcon from './arrow.svg';
+
 import Image from 'next/image';
 const Button: FC<ButtonProps> = ({
     children,
@@ -26,13 +27,13 @@ const Button: FC<ButtonProps> = ({
                         [styles.down]: arrow === 'down',
                     })}
                 >
-                    <Image
+                    {/* <Image
                         alt='arrow'
                         src={ArrowIcon}
                         width={10}
                         height={10}
-                    />
-                    {/* <ArrowIcon/> */}
+                    /> */}
+                    <ArrowIcon className/>
                 </span>
             )}
         </button>
