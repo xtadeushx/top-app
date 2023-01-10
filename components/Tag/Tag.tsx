@@ -7,7 +7,7 @@ import styles from './Tag.module.css';
 
 const Tag: FC<ITagProps> = ({
     children,
-    size,
+    size = 's',
     className,
     color,
     href,
