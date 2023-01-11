@@ -42,12 +42,12 @@
 	transform: rotate(90deg);
 }
 
-.ghost:hover svg {
-	transition: var(--transition);
-	transform: rotate(90deg);
+.primary svg {
 	fill: var(--white);
 }
 
-.primary svg {
+.ghost:hover svg {
+	transition: var(--transition);
+	transform: rotate(90deg);
 	fill: var(--white);
 }
