@@ -36,7 +36,7 @@ const Rating: FC<IRatingProps> = ({
                         onKeyDown={(e: KeyboardEvent<SVGAElement>) =>
                             handleSpace(e, i + 1)
                         }
-                        tabindex={isEditable ? 0 : -1}
+                        tabIndex={isEditable ? 0 : -1}
                     />
                 </span>
             );
