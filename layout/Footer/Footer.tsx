@@ -3,7 +3,7 @@ import { IFooterProps } from './Footer.props';
 
 import styles from './Footer.module.css';
 
-const Footer: FC<IFooterProps> = ({ className, ...props }): JSX.Element => {
+const Footer: FC<IFooterProps> = ({ ...props }): JSX.Element => {
     return (
         <footer {...props}>
             <h2>Footer</h2>{' '}
