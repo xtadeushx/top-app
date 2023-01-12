@@ -6,7 +6,7 @@ import styles from './Sidebar.module.css';
 const Sidebar: FC<ISidebarProps> = ({ ...props }): JSX.Element => {
     return (
         <div {...props}>
-            <h2>Sidebar</h2>{' '}
+            <h2>Sidebar</h2>
         </div>
     );
 };
